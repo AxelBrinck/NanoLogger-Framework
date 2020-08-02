@@ -10,23 +10,19 @@ namespace Nanologger
     /// </summary>
     public class Logger
     {
-        /// <summary>
-        /// The list of outputs that the logger will have.
-        /// You can have multiple outputs at the same time.
-        /// </summary>
         private readonly List<IOutput> _destinations = new List<IOutput>();
 
         /// <summary>
         /// Adds an output to the logger object.
         /// </summary>
-        /// <param name="logOutput">The given output procedure to be stored in the list.</param>
-        public void AddOutput(IOutput logOutput) => _destinations.Add(logOutput);
+        /// <param name="output">The given output procedure to be stored in the list.</param>
+        public void AddOutput(IOutput output) => _destinations.Add(output);
 
         /// <summary>
         /// The main mthod to log.
         /// </summary>
-        /// <param name="logInfo">The given logging information.</param>
-        public void Log(Log logInfo)
+        /// <param name="log">The given logging information.</param>
+        public void Log(Log log)
         {
             if (_destinations.Count == 0)
             {
@@ -35,7 +31,7 @@ namespace Nanologger
             
             foreach (var destination in _destinations)
             {
-                destination.Store(logInfo);
+                destination.Store(log);
             }
         }
     }

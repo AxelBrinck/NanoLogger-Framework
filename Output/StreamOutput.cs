@@ -27,10 +27,10 @@ namespace Nanologger.Output
         /// <summary>
         /// The method used to format and push over a stream a given logging information.
         /// </summary>
-        /// <param name="logInfo">The given logging information to store.</param>
-        public void Store(Log logInfo)
+        /// <param name="log">The given logging information to store.</param>
+        public void Store(Log log)
         {
-            var formattedLog = _format.Format(logInfo);
+            var formattedLog = _format.Format(log);
             
             _writer.WriteLine(formattedLog);
             

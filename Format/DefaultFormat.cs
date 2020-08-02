@@ -5,18 +5,18 @@ using Nanologger.Enums;
 namespace Nanologger.Format
 {
     /// <summary>
-    /// Sets a default format to be used in a stream based output logging.
+    /// Defines a default format to represent logs over a string.
     /// </summary>
     public class DefaultFormat : IFormat
     {
         /// <summary>
         /// Returns a formatted string with a given logging information object.
         /// </summary>
-        /// <param name="logInfo">The required logging information object.</param>
+        /// <param name="log">The required logging information object.</param>
         /// <returns>The formatted string.</returns>
-        public string Format(Log logInfo)
+        public string Format(Log log)
         {
-            return $"[{Enum.GetName(typeof(Severity), logInfo.Severity), -12}] - {logInfo.Timestamp.ToLongTimeString()} - {logInfo.Source}: '{logInfo.Message}'";
+            return $"[{Enum.GetName(typeof(Severity), log.Severity), -12}] - {log.Timestamp.ToLongTimeString()} - {log.Source}: '{log.Message}'";
         }
     }
 }
