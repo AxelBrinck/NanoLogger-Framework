@@ -1,6 +1,6 @@
-﻿using LoggingFramework.Entities;
+﻿using Nanologger.Entities;
 
-namespace LoggingFramework.Format
+namespace Nanologger.Format
 {
     public interface ILogStringFormat
     {

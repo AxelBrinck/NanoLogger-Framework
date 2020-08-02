@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using LoggingFramework.Entities;
-using LoggingFramework.Output;
+using Nanologger.Entities;
+using Nanologger.Output;
 
-namespace LoggingFramework
+namespace Nanologger
 {
     public class Logger
     {

@@ -1,6 +1,6 @@
-﻿using LoggingFramework.Entities;
+﻿using Nanologger.Entities;
 
-namespace LoggingFramework.Output
+namespace Nanologger.Output
 {
     public interface ILogOutput
     {

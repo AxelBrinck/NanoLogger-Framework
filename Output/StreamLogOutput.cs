@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using LoggingFramework.Entities;
-using LoggingFramework.Format;
+using Nanologger.Entities;
+using Nanologger.Format;
 
-namespace LoggingFramework.Output
+namespace Nanologger.Output
 {
     public class StreamLogOutput : ILogOutput
     {

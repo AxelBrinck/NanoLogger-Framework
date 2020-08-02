@@ -1,7 +1,7 @@
 ﻿using System;
-using LoggingFramework.Enums;
+using Nanologger.Enums;
 
-namespace LoggingFramework.Entities
+namespace Nanologger.Entities
 {
     
     /**

@@ -1,8 +1,8 @@
 ﻿using System;
-using LoggingFramework.Entities;
-using LoggingFramework.Enums;
+using Nanologger.Entities;
+using Nanologger.Enums;
 
-namespace LoggingFramework.Format
+namespace Nanologger.Format
 {
     public class DefaultLogStringFormat : ILogStringFormat
     {
