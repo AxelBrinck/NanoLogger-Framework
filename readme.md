@@ -1,4 +1,4 @@
-# NanoLogger
+# NanoLogger Framework
 An ASP.NET.Core light-weight framework to quickly start logging in a fancy way.
 
 It provides the minimum tools needed to format and log to different outputs, like the console, or file.
