@@ -3,11 +3,11 @@ An ASP.NET.Core light-weight framework to quickly start logging in a fancy way.
 
 It provides the minimum tools needed to format and log to different outputs, like the console, or file.
 
-You can log at several outputs at the same time.
+You can log to several outputs at the same time.
 
-You can define your outputs. This means that if you want to log to a database, you can define the procedure and add it as an output.
+You can define your own custom outputs. This means that if you want to log to a database, you can define the procedure and add it as an output to the Logger object.
 
-You can define your own displaying formats, or choose to use the default provided in the framework.
+You can define your own displaying formats also, or choose to use the default one provided in the framework.
 
 ```
 [Debug       ] - 16:18:03 - Main: 'Program started'
@@ -41,18 +41,18 @@ var fileStream = File.OpenWrite("log.txt");
 var fileOutput = new StreamOutput(fileStream, format);
 ```
 
-We can now create our main Logger object.
+Now create the main Logger object.
 
 ```
 var logger = new Logger();
 ```
 
-We set its output to be our stream file.
+Set an output to be the stream file.
 ```
 logger.AddOutput(fileOutput);
 ```
 
-We can now log like this.
+Now you can log like this!
 ```
 logger.Log(new Log(Severity.Debug, DateTime.Now, "Main", "Program started"));
 logger.Log(new Log(Severity.Debug, DateTime.Now, "Other module", "Hallo!"));
