@@ -2,6 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Version>1.0.0.0</Version>
+        <Authors>Axel Brinck</Authors>
+        <Company>Axel Brinck</Company>
+        <Product>NanoLogger</Product>
+        <Description>A light-weight logging framework</Description>
+        <RepositoryUrl>https://github.com/AxelBrinck/NanoLogger</RepositoryUrl>
     </PropertyGroup>
 
 </Project>
