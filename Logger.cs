@@ -14,19 +14,19 @@ namespace Nanologger
         /// The list of outputs that the logger will have.
         /// You can have multiple outputs at the same time.
         /// </summary>
-        private readonly List<ILogOutput> _destinations = new List<ILogOutput>();
+        private readonly List<IOutput> _destinations = new List<IOutput>();
 
         /// <summary>
         /// Adds an output to the logger object.
         /// </summary>
         /// <param name="logOutput">The given output procedure to be stored in the list.</param>
-        public void AddOutput(ILogOutput logOutput) => _destinations.Add(logOutput);
+        public void AddOutput(IOutput logOutput) => _destinations.Add(logOutput);
 
         /// <summary>
         /// The main mthod to log.
         /// </summary>
         /// <param name="logInfo">The given logging information.</param>
-        public void Log(LogInfo logInfo)
+        public void Log(Log logInfo)
         {
             if (_destinations.Count == 0)
             {

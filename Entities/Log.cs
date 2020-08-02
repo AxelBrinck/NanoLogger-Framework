@@ -7,7 +7,7 @@ namespace Nanologger.Entities
     /// <summary>
     /// Represents a log.
     /// </summary>
-    public class LogInfo
+    public class Log
     {
         /// <summary>
         /// The severity of the log.
@@ -41,7 +41,7 @@ namespace Nanologger.Entities
         /// <param name="timestamp">Sets the timestamp of the log.</param>
         /// <param name="source">Sets the source of the log.</param>
         /// <param name="message">Sets the message of the log.</param>
-        public LogInfo(Severity severity, DateTime timestamp, string source, string message)
+        public Log(Severity severity, DateTime timestamp, string source, string message)
         {
             Severity = severity;
             Timestamp = timestamp;

@@ -7,12 +7,12 @@ namespace Nanologger.Output
     /// For example: It is not the same procedure to store in a file, or in a database.
     /// Implement this database to write the storage code for your target platform.
     /// </summary>
-    public interface ILogOutput
+    public interface IOutput
     {
         /// <summary>
         /// Executes the storage procedure to save a given logging information object.
         /// </summary>
         /// <param name="logInfo">The logging information object.</param>
-        void Store(LogInfo logInfo);
+        void Store(Log logInfo);
     }
 }
