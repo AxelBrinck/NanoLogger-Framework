@@ -8,6 +8,7 @@
         <Product>NanoLogger</Product>
         <Description>A light-weight logging framework</Description>
         <RepositoryUrl>https://github.com/AxelBrinck/NanoLogger</RepositoryUrl>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
     </PropertyGroup>
 
 </Project>
